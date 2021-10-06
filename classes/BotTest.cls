@@ -8,6 +8,7 @@ public class BotTest {
         Map<String, String> session = response.session;
         response = BotController.submit('Developer', session, null, null);
         System.assert(response.messages[0].items.size() > 0);
+	    //Comment
     }
 
     static testMethod void testHello() {
