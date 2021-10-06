@@ -1790,6 +1790,10 @@
         <name>CustomField</name>
     </types>
     <types>
+        <members>Label2</members>
+        <name>CustomLabel</name>
+    </types>
+    <types>
         <members>Account</members>
         <members>AccountCleanInfo</members>
         <members>AccountContactRole</members>
