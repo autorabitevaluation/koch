@@ -1,17 +1,5 @@
 public with sharing class BotController {
 
-    class HandlerMapping {
-        
-        public String handlerClassName;
-        public Pattern utterancePattern;
-
-        public HandlerMapping(String handlerClassName, String patternStr) {
-            this.handlerClassName = handlerClassName;
-            this.utterancePattern = Pattern.compile(patternStr);
-        }
-
-    }
-
     static List<HandlerMapping> handlerMappings;
     
     static {
@@ -58,6 +46,19 @@ public with sharing class BotController {
             return new BotResponse(new BotMessage('Bot', 'Oops, something went wrong invoking that command'));
         }
         
+    }
+
+    // Jason: Moved class
+    class HandlerMapping {
+        
+        public String handlerClassName;
+        public Pattern utterancePattern;
+
+        public HandlerMapping(String handlerClassName, String patternStr) {
+            this.handlerClassName = handlerClassName;
+            this.utterancePattern = Pattern.compile(patternStr);
+        }
+
     }
     
 }
