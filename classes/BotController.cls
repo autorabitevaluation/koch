@@ -9,8 +9,7 @@ public with sharing class BotController {
             this.handlerClassName = handlerClassName;
             this.utterancePattern = Pattern.compile(patternStr);
         }
-
-    }
+    // Invalid class
 
     static List<HandlerMapping> handlerMappings;
     
